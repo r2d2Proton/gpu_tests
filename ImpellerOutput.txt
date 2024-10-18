@@ -1,0 +1,155 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.11.4
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+E:\Dev\Repos\.r2d2Proton\gpu_tests>flutter config --enable-native-assets
+Setting "enable-native-assets" value to "true".
+
+You may need to restart any open editors for them to read new settings.
+
+E:\Dev\Repos\.r2d2Proton\gpu_tests>
+E:\Dev\Repos\.r2d2Proton\gpu_tests>flutter run -d 1322224009825 --enable-impeller --verbose
+[   +3 ms] Could not interpret results of "git describe": 3.27.0-1.0.pre.74
+[ +112 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +53 ms] executing: E:\Dev\Android\Sdk\platform-tools\adb.exe devices -l
+[  +41 ms] List of devices attached
+           1322224009825          device product:mdarcy model:SHIELD_Android_TV device:mdarcy transport_id:3
+[   +4 ms] E:\Dev\Android\Sdk\platform-tools\adb.exe -s 1322224009825 shell getprop
+[  +73 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +112 ms] Skipping pub get: version match.
+[ +186 ms] Generating E:\Dev\Repos\.r2d2Proton\gpu_tests\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+[  +51 ms] ro.hardware = darcy
+[        ] ro.build.characteristics = tv
+[ +117 ms] Dry running native assets for android.
+[  +89 ms] config.json contents: {
+             "dry_run": true,
+             "link_mode_preference": "dynamic",
+             "linking_enabled": false,
+             "out_dir": "E:\\Dev\\Repos\\.r2d2Proton\\gpu_tests\\.dart_tool\\native_assets_builder\\1aa8219695bdadff11235d74db7873c3\\out\\",
+             "package_name": "gpu_tests",
+             "package_root": "E:\\Dev\\Repos\\.r2d2Proton\\gpu_tests\\",
+             "supported_asset_types": [
+               "native_code"
+             ],
+             "target_os": "android",
+             "version": "1.5.0"
+           }
+[   +3 ms] Running `E:\Dev\flutter\bin\dart --packages=E:\Dev\Repos\.r2d2Proton\gpu_tests\.dart_tool\package_config.json
+E:\Dev\Repos\.r2d2Proton\gpu_tests\.dart_tool\native_assets_builder\1aa8219695bdadff11235d74db7873c3\hook.dill
+--config=E:\Dev\Repos\.r2d2Proton\gpu_tests\.dart_tool\native_assets_builder\1aa8219695bdadff11235d74db7873c3\config.json`.
+[ +215 ms] Unhandled exception:
+[   +1 ms] PathNotFoundException: Cannot open file, path = 'E:\Dev\Repos\.r2d2Proton\gpu_tests\shaders.shaderbundle.json' (OS Error: The system cannot find the file specified.
+[        ] , errno = 2)
+[        ] #0      _checkForErrorResponse (dart:io/common.dart:56:9)
+[        ] #1      _File.open.<anonymous closure> (dart:io/file_impl.dart:381:7)
+[        ] <asynchronous suspension>
+[        ] #2      _File.readAsBytes.<anonymous closure> (dart:io/file_impl.dart:562:24)
+[        ] <asynchronous suspension>
+[        ] #3      _File.readAsString (dart:io/file_impl.dart:621:18)
+[        ] <asynchronous suspension>
+[        ] #4      _buildShaderBundleJson (package:flutter_gpu_shaders/build.dart:21:7)
+[        ] <asynchronous suspension>
+[        ] #5      buildShaderBundleJson (package:flutter_gpu_shaders/build.dart:111:3)
+[        ] <asynchronous suspension>
+[        ] #6      main.<anonymous closure> (file:///e:/dev/repos/.r2d2proton/gpu_tests/hook/build.dart:6:5)
+[        ] <asynchronous suspension>
+[        ] #7      build (package:native_assets_cli/src/api/build.dart:93:3)
+[        ] <asynchronous suspension>
+[        ] #8      main (file:///e:/dev/repos/.r2d2proton/gpu_tests/hook/build.dart:5:3)
+[        ] <asynchronous suspension>
+[  +13 ms] Building native assets for package:gpu_tests failed.
+           file:///E:/Dev/Repos/.r2d2Proton/gpu_tests/hook/build.dart returned with exit code: 255.
+           To reproduce run:
+           E:\Dev\flutter\bin\dart --packages=E:\Dev\Repos\.r2d2Proton\gpu_tests\.dart_tool\package_config.json
+           E:\Dev\Repos\.r2d2Proton\gpu_tests\.dart_tool\native_assets_builder\1aa8219695bdadff11235d74db7873c3\hook.dill
+           --config=E:\Dev\Repos\.r2d2Proton\gpu_tests\.dart_tool\native_assets_builder\1aa8219695bdadff11235d74db7873c3\config.json
+           stderr:
+           Unhandled exception:
+           PathNotFoundException: Cannot open file, path = 'E:\Dev\Repos\.r2d2Proton\gpu_tests\shaders.shaderbundle.json' (OS Error: The system cannot find the file specified.
+
+           , errno = 2)
+           #0      _checkForErrorResponse (dart:io/common.dart:56:9)
+           #1      _File.open.<anonymous closure> (dart:io/file_impl.dart:381:7)
+           <asynchronous suspension>
+           #2      _File.readAsBytes.<anonymous closure> (dart:io/file_impl.dart:562:24)
+           <asynchronous suspension>
+           #3      _File.readAsString (dart:io/file_impl.dart:621:18)
+           <asynchronous suspension>
+           #4      _buildShaderBundleJson (package:flutter_gpu_shaders/build.dart:21:7)
+           <asynchronous suspension>
+           #5      buildShaderBundleJson (package:flutter_gpu_shaders/build.dart:111:3)
+           <asynchronous suspension>
+           #6      main.<anonymous closure> (file:///e:/dev/repos/.r2d2proton/gpu_tests/hook/build.dart:6:5)
+           <asynchronous suspension>
+           #7      build (package:native_assets_cli/src/api/build.dart:93:3)
+           <asynchronous suspension>
+           #8      main (file:///e:/dev/repos/.r2d2proton/gpu_tests/hook/build.dart:5:3)
+           <asynchronous suspension>
+
+           stdout:
+
+
+[  +23 ms] "flutter run" took 1,006ms.
+[  +36 ms] Building (dry run) native assets failed. See the logs for more details.
+[        ]
+           #0      throwToolExit (package:flutter_tools/src/base/common.dart:10:3)
+           #1      _throwNativeAssetsBuildDryRunFailed (package:flutter_tools/src/isolated/native_assets/native_assets.dart:892:3)
+           #2      _runDartDryRunBuild (package:flutter_tools/src/isolated/native_assets/native_assets.dart:790:5)
+           <asynchronous suspension>
+           #3      runFlutterSpecificDartDryRunOnPlatforms (package:flutter_tools/src/isolated/native_assets/native_assets.dart:160:36)
+           <asynchronous suspension>
+           #4      HotRunner.run (package:flutter_tools/src/run_hot.dart:372:26)
+           <asynchronous suspension>
+           #5      RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:854:27)
+           <asynchronous suspension>
+           #6      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1450:27)
+           <asynchronous suspension>
+           #7      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+           <asynchronous suspension>
+           #8      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+           <asynchronous suspension>
+           #9      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:421:9)
+           <asynchronous suspension>
+           #10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+           <asynchronous suspension>
+           #11     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:364:5)
+           <asynchronous suspension>
+           #12     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:131:9)
+           <asynchronous suspension>
+           #13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+           <asynchronous suspension>
+           #14     main (package:flutter_tools/executable.dart:94:3)
+           <asynchronous suspension>
+
+
+[  +26 ms] ensureAnalyticsSent: 25ms
+[        ] Running 2 shutdown hooks
+[   +1 ms] Shutdown hooks complete
+[  +19 ms] exiting with code 1
+
+E:\Dev\Repos\.r2d2Proton\gpu_tests>flutter --version
+Flutter 3.27.0-1.0.pre.74 • channel main • https://github.com/flutter/flutter.git
+Framework • revision e08ad36dd9 (24 hours ago) • 2024-10-16 19:15:06 +0200
+Engine • revision 46c28aaa46
+Tools • Dart 3.7.0 (build 3.7.0-27.0.dev) • DevTools 2.40.1

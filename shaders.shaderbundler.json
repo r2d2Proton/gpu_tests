@@ -1,0 +1,10 @@
+{
+    "SimpleVertex": {
+        "type": "vertex",
+        "file": "assets/shaders/simple.vert"
+    },
+    "SimpleFragment": {
+        "type": "fragment",
+        "file": "assets/shaders/simple.frag"
+    }
+}
