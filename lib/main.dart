@@ -80,7 +80,8 @@ class ScenePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
 
-    scene.render(camera, canvas, viewport: Offset.zero & size);
+    //scene.render(camera, canvas, viewport: Offset.zero & size);
+    //return;
 
     Vector4? clearColor = Vector4(colors.Colors.lightBlue.r, colors.Colors.lightBlue.g, colors.Colors.lightBlue.b, colors.Colors.lightBlue.a);
     //final texture = gpu.gpuContext.createTexture(gpu.StorageMode.devicePrivate, size.width.toInt(), size.height.toInt())!;
